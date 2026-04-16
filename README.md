@@ -10,19 +10,9 @@ I take complex software from concept to production across backend systems, deskt
 
 ## What I Do
 
-- Design systems and products end to end.
-- Build backend services, desktop applications, integrations, and operational tooling.
-- Work across architecture, implementation, reliability, and user-facing product behavior.
+- Design and build software end to end across frontend, backend, desktop, integrations, and operations.
+- Work across architecture, implementation, reliability, and product-facing behavior.
 - Deliver software that holds up in operating conditions.
-
-## What's In This Repository
-
-- `hospitality-pos/`
-  The main project in this repository, with the system split into:
-  - `raspberry-pi-spring/`
-  - `windows-tauri/`
-- `cv/`
-  CV materials.
 
 ## Hospitality POS System
 
