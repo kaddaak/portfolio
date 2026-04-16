@@ -133,4 +133,4 @@ A proof-of-concept analytics project using Next.js, Spring Boot, Python, MQTT / 
 
 ### ProofKit
 
-An internal Linux evidence tool for generating cryptographically signed evidence bundles with RFC 3161 timestamps, publication receipts, and retention support.
+An internal Linux evidence tool for generating cryptographically signed evidence bundles with RFC 3161 timestamps, publication receipts, and object-lock retention support.
