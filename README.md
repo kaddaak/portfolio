@@ -13,7 +13,7 @@ I take complex software from concept to production across backend systems, deskt
 - Design systems and products end to end.
 - Build backend services, desktop applications, integrations, and operational tooling.
 - Work across architecture, implementation, reliability, and user-facing product behavior.
-- Deliver software that has to hold up in real operating conditions.
+- Deliver software that holds up in operating conditions.
 
 ## How This Repository Is Organized
 
@@ -26,7 +26,7 @@ I take complex software from concept to production across backend systems, deskt
 
 ## Hospitality POS System
 
-I designed and built it as a real operational system spanning backend architecture, desktop runtime, native workstation integration, messaging, sync, tax-compliant receipt workflows, diagnostics, and operator-facing product flows.
+I designed and built it as an operational POS system spanning backend architecture, desktop runtime, native workstation integration, messaging, sync, tax-compliant receipt workflows, diagnostics, and operator-facing product flows.
 
 The system includes:
 
@@ -37,7 +37,7 @@ The system includes:
 - local REST and MQTT service communication
 - cloud synchronization and tax-compliant receipt workflows
 - device discovery, workstation coordination, and native device integration
-- operator-facing software built for real service workflows
+- operator-facing software built for service workflows
 
 ### Raspberry Pi Spring
 
@@ -80,7 +80,7 @@ Main areas of work:
 - venue floor plan editing
 - table operations flows
 - native device integration across the desktop-to-backend boundary
-- tooling built for real-world edge cases, not idealized flows
+- tooling built for real-world edge cases
 
 ## Technologies
 
@@ -134,4 +134,3 @@ A proof-of-concept analytics project using Next.js, Spring Boot, Python, MQTT / 
 ### ProofKit
 
 An internal Linux evidence tool for generating cryptographically signed evidence bundles with RFC 3161 timestamps, publication receipts, and retention support.
-
