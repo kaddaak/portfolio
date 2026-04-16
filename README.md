@@ -61,6 +61,15 @@ Main areas of work:
 - workstation dispatch and routing
 - diagnostics and remote support flows
 
+Feature deep dives:
+
+- [Provisioning and fleet operations](./hospitality-pos/raspberry-pi-spring/features/01-provisioning-and-fleet-operations/README.md)
+- [Device bootstrap and auth](./hospitality-pos/raspberry-pi-spring/features/02-device-bootstrap-and-auth/README.md)
+- [Local sync and cloud reconciliation](./hospitality-pos/raspberry-pi-spring/features/03-local-sync-and-cloud-reconciliation/README.md)
+- [MQTT coordination and LAN runtime](./hospitality-pos/raspberry-pi-spring/features/04-mqtt-coordination-and-lan-runtime/README.md)
+- [Tax authority integration and recovery](./hospitality-pos/raspberry-pi-spring/features/05-tax-authority-integration-and-recovery/README.md)
+- [Remote LAN printer discovery and transport](./hospitality-pos/raspberry-pi-spring/features/06-lan-printer-discovery-and-transport/README.md)
+
 ### Windows (Tauri)
 
 It combines:
