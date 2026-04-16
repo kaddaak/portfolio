@@ -1,6 +1,6 @@
 # Antonio Kadić
 
-Product and Systems Engineer  
+Product Engineer  
 Zagreb, Croatia  
 kadic.antonio@gmail.com
 
@@ -15,7 +15,7 @@ I take complex software from concept to production across backend systems, deskt
 - Work across architecture, implementation, reliability, and user-facing product behavior.
 - Deliver software that holds up in operating conditions.
 
-## How This Repository Is Organized
+## What's In This Repository
 
 - `hospitality-pos/`
   The main project in this repository, with the system split into:
@@ -129,8 +129,8 @@ Main areas of work:
 
 ### DataForgeAI
 
-A proof-of-concept analytics project using Next.js, Spring Boot, Python, MQTT / EMQX, DuckDB, AWS S3, and Docker Compose to explore chat-driven and multi-service analytics workflows.
+A proof-of-concept analytics system using Next.js, Spring Boot, Python, MQTT / EMQX, DuckDB, AWS S3, and Docker Compose to explore chat-driven and multi-service analytics workflows.
 
 ### ProofKit
 
-An internal Linux evidence tool for generating cryptographically signed evidence bundles with RFC 3161 timestamps, publication receipts, and object-lock retention support.
+An internal Linux evidence tool for generating cryptographically signed evidence bundles with RFC 3161 timestamps, publication receipts, and immutable retention support.
