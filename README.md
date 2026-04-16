@@ -39,7 +39,7 @@ The system includes:
 - device discovery, workstation coordination, and native device integration
 - operator-facing software built for service workflows
 
-### Raspberry Pi Spring
+### Raspberry Pi (Spring)
 
 It coordinates:
 
@@ -61,7 +61,7 @@ Main areas of work:
 - workstation dispatch and routing
 - diagnostics and remote support flows
 
-### Windows Tauri
+### Windows (Tauri)
 
 It combines:
 
