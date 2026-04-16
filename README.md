@@ -40,99 +40,140 @@ The system includes:
 - operator-facing software built for service workflows
 
 ### Raspberry Pi (Spring)
-
-It coordinates:
-
-- desktop POS clients
-- waiter and kiosk clients
-- PostgreSQL transactional state
-- MQTT-based real-time workflow coordination
-- cloud sync
-- Croatian tax authority integration
-- diagnostic intake and retained support bundles
-- printer and workstation dispatch
-
-Main areas of work:
-
-- backend architecture and service contracts across multiple local clients
-- secure device bootstrap and two-level authentication
-- sectioned sync with cursors, initial hydration, and incremental updates
-- correctness-sensitive receipt lifecycle and recovery workflows
-- workstation dispatch and routing
-- diagnostics and remote support flows
-
-Feature deep dives:
-
-- [Provisioning and fleet operations](./hospitality-pos/raspberry-pi-spring/features/01-provisioning-and-fleet-operations/README.md)
-- [Device bootstrap and auth](./hospitality-pos/raspberry-pi-spring/features/02-device-bootstrap-and-auth/README.md)
-- [Local sync and cloud reconciliation](./hospitality-pos/raspberry-pi-spring/features/03-local-sync-and-cloud-reconciliation/README.md)
-- [MQTT coordination and LAN runtime](./hospitality-pos/raspberry-pi-spring/features/04-mqtt-coordination-and-lan-runtime/README.md)
-- [Tax authority integration and recovery](./hospitality-pos/raspberry-pi-spring/features/05-tax-authority-integration-and-recovery/README.md)
-- [Remote LAN printer discovery and transport](./hospitality-pos/raspberry-pi-spring/features/06-lan-printer-discovery-and-transport/README.md)
+<table>
+  <tr>
+    <th align="left" valign="top" width="33%">It coordinates</th>
+    <th align="left" valign="top" width="33%">Main areas of work</th>
+    <th align="left" valign="top" width="33%">Feature deep dives</th>
+  </tr>
+  <tr>
+    <td valign="top" width="33%">
+      - desktop POS clients
+      <br>
+      - waiter and kiosk clients
+      <br>
+      - PostgreSQL transactional state
+      <br>
+      - MQTT-based real-time workflow coordination
+      <br>
+      - cloud sync
+      <br>
+      - Croatian tax authority integration
+      <br>
+      - diagnostic intake and retained support bundles
+      <br>
+      - printer and workstation dispatch
+    </td>
+    <td valign="top" width="33%">
+      - backend architecture and service contracts across multiple local clients
+      <br>
+      - secure device bootstrap and two-level authentication
+      <br>
+      - sectioned sync with cursors, initial hydration, and incremental updates
+      <br>
+      - correctness-sensitive receipt lifecycle and recovery workflows
+      <br>
+      - workstation dispatch and routing
+      <br>
+      - diagnostics and remote support flows
+    </td>
+    <td valign="top" width="33%">
+      - <a href="./hospitality-pos/raspberry-pi-spring/features/01-provisioning-and-fleet-operations/README.md">Provisioning and fleet operations</a>
+      <br>
+      - <a href="./hospitality-pos/raspberry-pi-spring/features/02-device-bootstrap-and-auth/README.md">Device bootstrap and auth</a>
+      <br>
+      - <a href="./hospitality-pos/raspberry-pi-spring/features/03-local-sync-and-cloud-reconciliation/README.md">Local sync and cloud reconciliation</a>
+      <br>
+      - <a href="./hospitality-pos/raspberry-pi-spring/features/04-mqtt-coordination-and-lan-runtime/README.md">MQTT coordination and LAN runtime</a>
+      <br>
+      - <a href="./hospitality-pos/raspberry-pi-spring/features/05-tax-authority-integration-and-recovery/README.md">Tax authority integration and recovery</a>
+      <br>
+      - <a href="./hospitality-pos/raspberry-pi-spring/features/06-lan-printer-discovery-and-transport/README.md">Remote LAN printer discovery and transport</a>
+    </td>
+  </tr>
+</table>
 
 ### Windows (Tauri)
-
-It combines:
-
-- React UI
-- Rust native runtime
-- SQLite local persistence
-- secure LAN discovery
-- Windows device and driver integration
-- hardware-facing system integration
-- production diagnostics tooling
-
-Main areas of work:
-
-- interaction design for fast operator workflows
-- interactive workspace grid systems
-- venue floor plan editing
-- table operations flows
-- native device integration across the desktop-to-backend boundary
-- tooling built for real-world edge cases
+<table>
+  <tr>
+    <th align="left" valign="top" width="33%">It combines</th>
+    <th align="left" valign="top" width="33%">Main areas of work</th>
+    <th align="left" valign="top" width="33%">Feature deep dives</th>
+  </tr>
+  <tr>
+    <td valign="top" width="33%">
+      - React UI
+      <br>
+      - Rust native runtime
+      <br>
+      - SQLite local persistence
+      <br>
+      - secure LAN discovery
+      <br>
+      - Windows device and driver integration
+      <br>
+      - hardware-facing system integration
+      <br>
+      - production diagnostics tooling
+    </td>
+    <td valign="top" width="33%">
+      - interaction design for fast operator workflows
+      <br>
+      - interactive workspace grid systems
+      <br>
+      - venue floor plan editing
+      <br>
+      - table operations flows
+      <br>
+      - native device integration across the desktop-to-backend boundary
+      <br>
+      - tooling built for real-world edge cases
+    </td>
+    <td valign="top" width="33%"></td>
+  </tr>
+</table>
 
 ## Technologies
 
-### Backend and Platform
-
-- Java
-- Spring Boot
-- Spring Security
-- Spring Web
-- JPA / Hibernate
-- PostgreSQL
-- DuckDB
-- JWT
-- MQTT / EMQX
-- AWS S3
-- Docker / Docker Compose
-- SOAP
-- NGINX
-- Tailscale
-- Raspberry Pi deployment
-
-### Desktop and Frontend
-
-- Rust
-- Tauri
-- React
-- Next.js
-- TypeScript
-- SQLite
-- Web Workers
-- OffscreenCanvas
-- Windows device and driver integration
-- Native desktop integration
-
-### Additional Tools and Systems
-
-- Python
-- OpenSSL / X.509
-- Backblaze B2
-- JSF / PrimeFaces
-- Elasticsearch
-- Apache Ignite
-- Bash / Shell scripting
+<table>
+  <tr>
+    <td valign="top" width="33%">
+      <strong>Backend and Platform</strong>
+      <br><br>
+      <code>Java</code> <code>Spring Boot</code> <code>Spring Security</code>
+      <br>
+      <code>Spring Web</code> <code>JPA / Hibernate</code> <code>PostgreSQL</code>
+      <br>
+      <code>DuckDB</code> <code>JWT</code> <code>MQTT / EMQX</code>
+      <br>
+      <code>AWS S3</code> <code>Docker / Docker Compose</code> <code>SOAP</code>
+      <br>
+      <code>NGINX</code> <code>Tailscale</code> <code>Raspberry Pi deployment</code>
+    </td>
+    <td valign="top" width="33%">
+      <strong>Desktop and Frontend</strong>
+      <br><br>
+      <code>Rust</code> <code>Tauri</code> <code>React</code>
+      <br>
+      <code>Next.js</code> <code>TypeScript</code> <code>SQLite</code>
+      <br>
+      <code>Web Workers</code> <code>OffscreenCanvas</code>
+      <br>
+      <code>Windows device and driver integration</code>
+      <br>
+      <code>Native desktop integration</code>
+    </td>
+    <td valign="top" width="33%">
+      <strong>Additional Tools and Systems</strong>
+      <br><br>
+      <code>Python</code> <code>OpenSSL / X.509</code> <code>Backblaze B2</code>
+      <br>
+      <code>JSF / PrimeFaces</code> <code>Elasticsearch</code>
+      <br>
+      <code>Apache Ignite</code> <code>Bash / Shell scripting</code>
+    </td>
+  </tr>
+</table>
 
 ## Other Projects Worth Mentioning
 
