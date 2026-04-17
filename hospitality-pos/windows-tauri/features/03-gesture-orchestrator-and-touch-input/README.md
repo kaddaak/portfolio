@@ -1,0 +1,36 @@
+# Gesture Orchestrator and Touch Input
+
+The app does not rely on browser-default touch behavior. It runs an app-wide gesture orchestration layer that turns raw pointer input into deterministic tap, long-press, drag, swipe, and two-finger pinch behavior across nested UI.
+
+```mermaid
+flowchart TB
+  A["Pointer / wheel input"]
+  B["Target chain resolution<br/>child -> parent"]
+  C["Native + scroll gates"]
+  D["Intent resolver<br/>group + priority"]
+  E["Winning gesture"]
+
+  subgraph G["Runtime outcomes"]
+    T["Tap / long press / secondary"]
+    R["Drag / swipe"]
+    P["Pinch"]
+    N["Native scroller / widget"]
+  end
+
+  A --> B --> C --> D --> E
+  C --> N
+  E --> T
+  E --> R
+  E --> P
+```
+
+## How It Works
+
+- Input is routed through one app-wide gesture layer instead of each component improvising its own touch behavior
+- Nested surfaces resolve cleanly, so local interactions can take control without parent gestures firing at the same time
+- Single-touch and multi-touch paths are separated deliberately, which keeps tap, drag, swipe, and pinch behavior predictable under real use
+- Scrollable regions and native-style controls can stay on their own path instead of being swallowed by app-level gesture handling
+
+## Why It Matters
+
+This is what gives the app a genuine touch-first feel: interactions stay fluid, nested surfaces behave predictably, and operators can move through the interface with the speed and confidence people expect from a polished touch product.
