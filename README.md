@@ -29,7 +29,7 @@ The system includes:
 - device discovery, workstation coordination, and native device integration
 - operator-facing software built for service workflows
 
-### Raspberry Pi (Spring)
+### [Raspberry Pi (Spring)](./hospitality-pos/raspberry-pi-spring/README.md)
 <table>
   <tr>
     <th align="left" valign="top" width="33%">It coordinates</th>
@@ -83,7 +83,7 @@ The system includes:
   </tr>
 </table>
 
-### Windows (Tauri)
+### [Windows (Tauri)](./hospitality-pos/windows-tauri/README.md)
 <table>
   <tr>
     <th align="left" valign="top" width="33%">It combines</th>
@@ -119,7 +119,23 @@ The system includes:
       <br>
       - tooling built for real-world edge cases
     </td>
-    <td valign="top" width="33%"></td>
+    <td valign="top" width="33%">
+      - <a href="./hospitality-pos/windows-tauri/features/01-raspberry-discovery-and-trusted-lan-routing/README.md">Raspberry discovery and trusted LAN routing</a>
+      <br>
+      - <a href="./hospitality-pos/windows-tauri/features/02-safe-mode-and-recovery-flows/README.md">Safe mode and recovery flows</a>
+      <br>
+      - <a href="./hospitality-pos/windows-tauri/features/03-gesture-orchestrator-and-touch-input/README.md">Gesture orchestrator and touch input</a>
+      <br>
+      - <a href="./hospitality-pos/windows-tauri/features/04-grid-workspace-system/README.md">Grid workspace system</a>
+      <br>
+      - <a href="./hospitality-pos/windows-tauri/features/05-floor-plan-editor/README.md">Floor plan editor</a>
+      <br>
+      - <a href="./hospitality-pos/windows-tauri/features/06-orders-receipts-and-table-operations/README.md">Orders receipts and table operations</a>
+      <br>
+      - <a href="./hospitality-pos/windows-tauri/features/07-register-to-register-chat/README.md">Register to register chat</a>
+      <br>
+      - <a href="./hospitality-pos/windows-tauri/features/08-theming-and-localization/README.md">Theming and localization</a>
+    </td>
   </tr>
 </table>
 
@@ -128,39 +144,55 @@ The system includes:
 <table>
   <tr>
     <td valign="top" width="33%">
-      <strong>Backend and Platform</strong>
+      <strong>Backend</strong>
       <br><br>
-      <code>Java</code> <code>Spring Boot</code> <code>Spring Security</code>
+      <code>Java</code> <code>·</code> <code>Spring Boot</code> <code>·</code> <code>Spring Security</code>
       <br>
-      <code>Spring Web</code> <code>JPA / Hibernate</code> <code>PostgreSQL</code>
+      <code>JPA (Hibernate, EclipseLink)</code>
       <br>
-      <code>DuckDB</code> <code>JWT</code> <code>MQTT / EMQX</code>
+      <code>PostgreSQL</code> <code>·</code> <code>Elasticsearch</code>
       <br>
-      <code>AWS S3</code> <code>Docker / Docker Compose</code> <code>SOAP</code>
+      <code>Apache Ignite</code>
       <br>
-      <code>NGINX</code> <code>Tailscale</code> <code>Raspberry Pi deployment</code>
+      <code>REST</code> <code>·</code> <code>SOAP</code>
+      <br>
+      <code>JWT</code>
+      <br>
+      <code>MQTT</code> <code>·</code> <code>EMQX</code>
     </td>
     <td valign="top" width="33%">
-      <strong>Desktop and Frontend</strong>
+      <strong>Frontend and UI</strong>
       <br><br>
-      <code>Rust</code> <code>Tauri</code> <code>React</code>
+      <code>React</code> <code>·</code> <code>Next.js</code> <code>·</code> <code>TypeScript</code>
       <br>
-      <code>Next.js</code> <code>TypeScript</code> <code>SQLite</code>
+      <code>JSF</code> <code>·</code> <code>PrimeFaces</code>
       <br>
-      <code>Web Workers</code> <code>OffscreenCanvas</code>
+      <code>Web Workers</code> <code>·</code> <code>OffscreenCanvas</code>
       <br>
-      <code>Windows device and driver integration</code>
-      <br>
-      <code>Native desktop integration</code>
+      <code>UI</code> <code>·</code> <code>UX</code> <code>·</code> <code>interaction design</code>
     </td>
     <td valign="top" width="33%">
-      <strong>Additional Tools and Systems</strong>
+      <strong>Desktop and Operations</strong>
       <br><br>
-      <code>Python</code> <code>OpenSSL / X.509</code> <code>Backblaze B2</code>
+      <code>Rust</code> <code>·</code> <code>Tauri</code>
       <br>
-      <code>JSF / PrimeFaces</code> <code>Elasticsearch</code>
+      <code>SQLite</code>
       <br>
-      <code>Apache Ignite</code> <code>Bash / Shell scripting</code>
+      <code>Windows device integration</code>
+      <br>
+      <code>Docker</code> <code>·</code> <code>Docker Compose</code>
+      <br>
+      <code>NGINX</code> <code>·</code> <code>Tailscale</code>
+      <br>
+      <code>AWS S3</code> <code>·</code> <code>Backblaze B2</code>
+      <br>
+      <code>Raspberry Pi deployment and operations</code>
+      <br>
+      <code>Bash / shell scripting</code>
+      <br>
+      <code>Python</code>
+      <br>
+      <code>OpenSSL / X.509</code>
     </td>
   </tr>
 </table>
