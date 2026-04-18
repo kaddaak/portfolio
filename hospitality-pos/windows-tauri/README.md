@@ -1,37 +1,32 @@
 # Windows (Tauri)
 
-This is the Windows desktop side of the hospitality POS system, running as the operator-facing register application inside a single restaurant site.
+This is the Windows desktop side of the hospitality POS system, running as the operator-facing register runtime inside a single restaurant site.
 
 It owns the part of the product that has to feel fast, touch-native, reliable under degraded conditions, and deeply integrated with the local Raspberry Pi runtime that coordinates the site.
 
 ## Runtime Topology
 
 ```mermaid
-flowchart TB
-  OP["Operator"] --> APP["Windows Tauri Register"]
+flowchart LR
+  OP["Operator"] --> UI["React UI"]
+
+  subgraph SITE["Raspberry Pi site node"]
+    API["Spring API"]
+    BROKER[("LAN MQTT / EMQX")]
+  end
 
   subgraph REGISTER["Register Runtime"]
-    UI["React UI"]
-    NATIVE["Rust native layer"]
-    SQLITE[("SQLite")]
-    HARDWARE["Windows hardware surfaces"]
+    UI --> NATIVE["Rust native layer"]
+    NATIVE <--> SQLITE[("SQLite")]
+    NATIVE --> HARDWARE["Windows hardware surfaces"]
   end
 
-  subgraph SITE_RUNTIME["Raspberry Pi site node"]
-    SITE["Spring API"]
-    MQTT[("LAN MQTT / EMQX")]
-  end
+  NATIVE --> API
+  NATIVE <--> BROKER
+  API <--> BROKER
 
-  APP --> UI
-  APP --> NATIVE
-  APP <--> SQLITE
-  APP --> HARDWARE
-
-  APP --> SITE
-  APP <--> MQTT
-
-  SITE --> CLOUD["Cloud sync"]
-  SITE --> TAX["Tax authority reporting"]
+  API --> CLOUD["Cloud sync"]
+  API --> TAX["Tax authority reporting"]
 ```
 
 ## Main Engineering Areas
