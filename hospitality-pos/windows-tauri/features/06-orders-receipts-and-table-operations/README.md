@@ -3,22 +3,24 @@
 This is the operational layer where the register handles live orders across a site cluster, turns them into receipts, and keeps the work coherent even when multiple registers could try to act on the same order.
 
 ```mermaid
-flowchart TB
-  A["Order and receipt runtime"]
+flowchart LR
+  subgraph S["Order sources"]
+    A["Local register orders"]
+    B["Waiter orders"]
+    C["Kiosk orders"]
+  end
 
-  A --> B["Cluster-safe order handling"]
-  A --> C["Receipt lifecycle"]
-  A --> D["Recovery"]
+  B --> L["Claim / release locking"]
+  C --> L
 
-  B --> B1["local orders"]
-  B --> B2["waiter / kiosk orders"]
-  B --> B3["claim / release locking"]
+  A --> W["Shared working surface"]
+  L --> W
 
-  C --> C1["checkout"]
-  C --> C2["pending receipts"]
-  C --> C3["issued receipts"]
-
-  D --> D1["retry + delayed completion"]
+  W --> X["Checkout"]
+  X --> Y["Pending receipt"]
+  Y --> Z["Issued receipt"]
+  Y --> R["Recovery / delayed completion"]
+  R --> Z
 ```
 
 ## Core Idea
