@@ -2,6 +2,12 @@
 
 Safe mode keeps the register operational during internet, MQTT, or Raspberry outages by making degraded state explicit to operators and automatically restoring paused work when connectivity returns.
 
+<p align="center">
+  <img src="./assets/safe-mode.gif" alt="Safe mode demo">
+</p>
+
+## Runtime Flow
+
 ```mermaid
 flowchart TB
   subgraph T["Safe-mode triggers"]
