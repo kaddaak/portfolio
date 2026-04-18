@@ -40,6 +40,17 @@ flowchart LR
 - Built-in register-to-register communication across the same site
 - Site-wide theming plus per-operator language preferences
 
+## Feature Deep Dives
+
+- [Raspberry discovery and trusted LAN routing](./features/01-raspberry-discovery-and-trusted-lan-routing/README.md)
+- [Safe mode and recovery flows](./features/02-safe-mode-and-recovery-flows/README.md)
+- [Gesture orchestrator and touch input](./features/03-gesture-orchestrator-and-touch-input/README.md)
+- [Grid workspace system](./features/04-grid-workspace-system/README.md)
+- [Floor plan editor](./features/05-floor-plan-editor/README.md)
+- [Orders, receipts, and table operations](./features/06-orders-receipts-and-table-operations/README.md)
+- [Register-to-register chat](./features/07-register-to-register-chat/README.md)
+- [Theming and localization](./features/08-theming-and-localization/README.md)
+
 ## Stack and Runtime
 
 - Rust / Tauri

@@ -197,12 +197,9 @@ The system includes:
   </tr>
 </table>
 
-## Other Projects Worth Mentioning
+## Other Relevant Work
 
-### DataForgeAI
+These are brief project mentions rather than full case studies in this repository.
 
-A proof-of-concept analytics system using Next.js, Spring Boot, Python, MQTT / EMQX, DuckDB, AWS S3, and Docker Compose to explore chat-driven and multi-service analytics workflows.
-
-### ProofKit
-
-An internal Linux evidence tool for generating cryptographically signed evidence bundles with RFC 3161 timestamps, publication receipts, and immutable retention support.
+- **DataForgeAI**: A proof-of-concept analytics system using Next.js, Spring Boot, Python, MQTT / EMQX, DuckDB, AWS S3, and Docker Compose to explore chat-driven and multi-service analytics workflows.
+- **ProofKit**: An internal Linux evidence tool for generating cryptographically signed evidence bundles with RFC 3161 timestamps, publication receipts, and immutable retention support.

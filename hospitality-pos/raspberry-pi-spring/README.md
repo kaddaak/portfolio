@@ -44,6 +44,15 @@ flowchart LR
 - Hardware discovery, workstation pairing, and routed print dispatch
 - Raspberry Pi provisioning, pinned machine state, and post-install operations
 
+## Feature Deep Dives
+
+- [Provisioning and fleet operations](./features/01-provisioning-and-fleet-operations/README.md)
+- [Device bootstrap and auth](./features/02-device-bootstrap-and-auth/README.md)
+- [Local sync and cloud reconciliation](./features/03-local-sync-and-cloud-reconciliation/README.md)
+- [MQTT coordination and LAN runtime](./features/04-mqtt-coordination-and-lan-runtime/README.md)
+- [Tax authority integration and recovery](./features/05-tax-authority-integration-and-recovery/README.md)
+- [Remote LAN printer discovery and transport](./features/06-lan-printer-discovery-and-transport/README.md)
+
 ## Stack and Deployment
 
 - Java / Spring Boot

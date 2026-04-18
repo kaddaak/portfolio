@@ -4,29 +4,29 @@ This flow is built around one outcome: one real sale must end as one canonical r
 
 ```mermaid
 flowchart TD
-  A["Client submits receipt issue request (/racuni)"] --> B["Raspberry records the workflow in the ledger"]
+  A["Client submits receipt issue request"] --> B["Raspberry records the workflow in the ledger"]
   B --> C["Signed SOAP request is sent to the tax authority"]
   C --> D{"Delivery outcome"}
 
-  D -->|Success| E["Durable terminal truth is recorded"]
+  D -->|Success| E["Durable final outcome is recorded"]
   E --> F["Receipt view is projected locally"]
 
-  D -->|Known not sent| G["Retry the same receipt workflow"]
+  D -->|Safe retry| G["Retry the same receipt workflow"]
   G --> H["Same receipt data<br/>new outbound message id"]
   H --> C
 
-  D -->|Unknown remote outcome| I["Stop blind resend"]
-  I --> J["Workflow is blocked for manual resolution or explicit re-arm"]
+  D -->|Outcome uncertain| I["Stop blind resend"]
+  I --> J["Workflow is blocked until someone resolves it or explicitly tries again"]
 
-  B --> K["If Raspberry accepts the receipt late,<br/>delivery is marked as delayed"]
+  B --> K["If the receipt is accepted after the original issue moment,<br/>delivery is marked as delayed"]
 ```
 
-- The receipt itself stays stable: receipt number, business time, taxes, total, and `ZKI` do not change during recovery.
+- The receipt itself stays stable: receipt number, business time, taxes, total, and receipt signature do not change during recovery.
 - Delivery attempts are allowed to change: each outbound send can use a new message id while still representing the same receipt.
-- The ledger stores the request, the response, and the recovery state so the server can replay the latest durable truth instead of guessing.
-- `KNOWN_NOT_SENT` failures can continue automatically on the same workflow.
-- `UNKNOWN_REMOTE_OUTCOME` stops blind resend for `/racuni`, because the previous attempt might already have been accepted by the tax authority.
-- POST success is driven by durable reported outcome, not by whether the local receipt row has already been materialized.
+- The ledger stores the request, the response, and the recovery state so the server can replay the latest durable outcome instead of guessing.
+- If a failed send is known not to have reached the tax authority, the same receipt workflow can continue automatically.
+- If the remote outcome is uncertain, the system stops blind resend, because the previous attempt might already have been accepted by the tax authority.
+- The workflow is considered successful only after a durable reported outcome is recorded, not just because a local receipt row already exists.
 
 ## What This Work Covers
 
