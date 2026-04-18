@@ -130,7 +130,7 @@ The system includes:
       <br>
       - <a href="./hospitality-pos/windows-tauri/features/05-floor-plan-editor/README.md">Floor plan editor</a>
       <br>
-      - <a href="./hospitality-pos/windows-tauri/features/06-orders-receipts-and-table-operations/README.md">Orders receipts and table operations</a>
+      - <a href="./hospitality-pos/windows-tauri/features/06-orders-receipts-and-table-operations/README.md">Orders, receipts, and table operations</a>
       <br>
       - <a href="./hospitality-pos/windows-tauri/features/07-register-to-register-chat/README.md">Register to register chat</a>
       <br>

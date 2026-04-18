@@ -28,7 +28,7 @@ flowchart TB
 - Presence and online-client tracking
 - Order claim and release coordination for kiosk and waiter flows
 - Workstation-targeted order dispatch
-- Register-to-register chat command handling and event fan-out
+- Register to register chat command handling and event fan-out
 - Activity-stream ingestion and websocket forwarding
 - Operational signals like health samples and logging mode changes
 

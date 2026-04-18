@@ -37,7 +37,7 @@ flowchart LR
 - Grid workspace runtime for navigation, movable surfaces, nested views, and shared layouts
 - Blueprint floor-plan editing and live table-based service flows
 - Cluster-safe order handling, claim and release coordination, and receipt lifecycle work
-- Built-in register-to-register communication across the same site
+- Built-in communication between registers across the same site
 - Site-wide theming plus per-operator language preferences
 
 ## Feature Deep Dives
@@ -48,7 +48,7 @@ flowchart LR
 - [Grid workspace system](./features/04-grid-workspace-system/README.md)
 - [Floor plan editor](./features/05-floor-plan-editor/README.md)
 - [Orders, receipts, and table operations](./features/06-orders-receipts-and-table-operations/README.md)
-- [Register-to-register chat](./features/07-register-to-register-chat/README.md)
+- [Register to register chat](./features/07-register-to-register-chat/README.md)
 - [Theming and localization](./features/08-theming-and-localization/README.md)
 
 ## Stack and Runtime

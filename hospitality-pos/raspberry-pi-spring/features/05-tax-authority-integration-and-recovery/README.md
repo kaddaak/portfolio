@@ -21,7 +21,7 @@ flowchart TD
   B --> K["If the receipt is accepted after the original issue moment,<br/>delivery is marked as delayed"]
 ```
 
-- The receipt itself stays stable: receipt number, business time, taxes, total, and receipt signature do not change during recovery.
+- The receipt itself stays stable: receipt number, business time, taxes, total, and receipt fiscal signature do not change during recovery.
 - Delivery attempts are allowed to change: each outbound send can use a new message id while still representing the same receipt.
 - The ledger stores the request, the response, and the recovery state so the server can replay the latest durable outcome instead of guessing.
 - If a failed send is known not to have reached the tax authority, the same receipt workflow can continue automatically.
