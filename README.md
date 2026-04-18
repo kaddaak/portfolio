@@ -132,7 +132,7 @@ The system includes:
       <br>
       - <a href="./hospitality-pos/windows-tauri/features/06-orders-receipts-and-table-operations/README.md">Orders, receipts, and table operations</a>
       <br>
-      - <a href="./hospitality-pos/windows-tauri/features/07-register-to-register-chat/README.md">Register to register chat</a>
+      - <a href="./hospitality-pos/windows-tauri/features/07-register-to-register-chat/README.md">Register-to-register chat</a>
       <br>
       - <a href="./hospitality-pos/windows-tauri/features/08-theming-and-localization/README.md">Theming and localization</a>
     </td>
