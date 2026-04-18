@@ -19,7 +19,7 @@ flowchart TB
 ```
 
 - The Raspberry node uses local EMQX as a shared messaging layer for every app on the site LAN.
-- That messaging layer is used for online presence, claim and release coordination, register-to-register chat, workstation dispatch, activity fan-out, and operational signals.
+- That messaging layer is used for online presence, claim and release coordination, register to register chat, workstation dispatch, activity fan-out, and operational signals.
 - Features publish typed events instead of polling each other directly, so each client can react to changes happening elsewhere in the site.
 - State-changing flows often publish only after database commit so runtime events stay aligned with committed local state.
 
