@@ -2,6 +2,12 @@
 
 This is the operational layer where the register handles live orders across a site cluster, turns them into receipts, and keeps the work coherent even when multiple registers could try to act on the same order.
 
+<p align="center">
+  <img src="./assets/orders-and-receipts.gif" alt="Orders, receipts, and table operations demo">
+</p>
+
+## Runtime Flow
+
 ```mermaid
 flowchart LR
   subgraph S["Order sources"]
