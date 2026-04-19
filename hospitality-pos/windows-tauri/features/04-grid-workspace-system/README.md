@@ -4,6 +4,12 @@ This is the core runtime of the Tauri app. The register surface is one tile-base
 
 That is why the same system can power both small movable tiles and full-screen surfaces. Some tiles are tiny, some span large parts of the grid, and some cover the whole grid, but the placement, movement, persistence, and navigation model stays the same.
 
+<p align="center">
+  <img src="./assets/grid-workspace.gif" alt="Grid workspace demo">
+</p>
+
+## Runtime Flow
+
 ```mermaid
 flowchart TB
   A["Grid workspace system"]

@@ -4,6 +4,12 @@ Blueprint is a swipe-up floor-plan surface built into the register, where operat
 
 It is also shared across the hospitality site through the Raspberry node, so a blueprint edited on one register can appear on the others without each device maintaining its own separate room map.
 
+<p align="center">
+  <img src="./assets/blueprint.gif" alt="Blueprint floor plan demo">
+</p>
+
+## Runtime Flow
+
 ```mermaid
 flowchart TB
   A["Blueprint floor plan runtime"]

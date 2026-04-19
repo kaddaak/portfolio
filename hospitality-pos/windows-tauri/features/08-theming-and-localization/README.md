@@ -2,6 +2,10 @@
 
 The register supports site-level visual customization without fragmenting the product. A venue can run the system in its own visual identity and preferred mode, while each operator keeps their own language preference on login.
 
+<p align="center">
+  <img src="./assets/theming-and-localization.gif" alt="Theming and localization demo">
+</p>
+
 ## What Users Can Change
 
 - 16 built-in visual themes shared across the register UI
