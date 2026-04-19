@@ -4,6 +4,10 @@ This is the Windows desktop side of the hospitality POS system, running as the o
 
 It owns the part of the product that has to feel fast, touch-native, reliable under degraded conditions, and deeply integrated with the local Raspberry Pi runtime that coordinates the site.
 
+<p align="center">
+  <img src="./assets/preview.gif" alt="Windows Tauri register preview">
+</p>
+
 ## Runtime Topology
 
 ```mermaid
