@@ -51,7 +51,7 @@ flowchart LR
 - [Gesture orchestrator and touch input](./features/03-gesture-orchestrator-and-touch-input/README.md)
 - [Grid workspace system](./features/04-grid-workspace-system/README.md)
 - [Floor plan editor](./features/05-floor-plan-editor/README.md)
-- [Orders, receipts, and table operations](./features/06-orders-receipts-and-table-operations/README.md)
+- [Orders and Receipt Operations](./features/06-orders-receipts-and-table-operations/README.md)
 - [Register-to-register chat](./features/07-register-to-register-chat/README.md)
 - [Theming and localization](./features/08-theming-and-localization/README.md)
 
