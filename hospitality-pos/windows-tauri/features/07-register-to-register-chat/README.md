@@ -4,6 +4,12 @@ Register-to-register chat is a live coordination surface built into the desktop 
 
 The Raspberry Pi mediates the whole flow. Registers publish chat actions into the local site runtime, the Raspberry validates them, and connected registers receive the resulting room events back over LAN MQTT.
 
+<p align="center">
+  <img src="./assets/chat.gif" alt="Register-to-register chat demo">
+</p>
+
+## Runtime Flow
+
 ```mermaid
 flowchart LR
   A["Registers"] -->|new / edit / delete| B["Raspberry Pi chat mediator"]
