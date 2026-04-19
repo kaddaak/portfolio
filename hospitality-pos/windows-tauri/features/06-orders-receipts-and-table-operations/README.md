@@ -1,9 +1,9 @@
-# Orders, Receipts, and Table Operations
+# Orders and Receipt Operations
 
 This is the operational layer where the register handles live orders across a site cluster, turns them into receipts, and keeps the work coherent even when multiple registers could try to act on the same order.
 
 <p align="center">
-  <img src="./assets/orders-and-receipts.gif" alt="Orders, receipts, and table operations demo">
+  <img src="./assets/orders-and-receipts.gif" alt="Orders and receipt operations demo">
 </p>
 
 ## Runtime Flow
@@ -37,7 +37,7 @@ flowchart LR
 
 ## What It Covers
 
-- Local table and standing orders on the register itself
+- Local register and standing orders
 - Claimed waiter and kiosk orders imported into the same working surface
 - Pending receipts, issued receipts, receipt reversal, and payment correction
 - Reliable cleanup and retry flows when work cannot finish immediately
