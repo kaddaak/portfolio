@@ -6,6 +6,8 @@ The register supports site-level visual customization without fragmenting the pr
   <img src="./assets/theming-and-localization.gif" alt="Theming and localization demo">
 </p>
 
+See the full [theme gallery](./theme-gallery.md).
+
 ## What Users Can Change
 
 - 16 built-in visual themes shared across the register UI
