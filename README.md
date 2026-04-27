@@ -10,6 +10,10 @@ I build production software across backend systems, desktop applications, local 
 
 I designed and built a production hospitality POS platform for real restaurant operations. It combines a Raspberry Pi site node, a Windows desktop register runtime, local and cloud sync, tax-compliant receipt handling, and device/workstation coordination.
 
+<p align="center">
+  <img src="./hospitality-pos/assets/intro.gif" alt="Hospitality POS platform overview demo">
+</p>
+
 Core elements:
 
 - Raspberry Pi site node for local authority, persistence, trust, cloud reconciliation, and tax reporting
